@@ -18,4 +18,17 @@ var evenNumbers = _.filter(numberArray, function(element) {
     return element % 2 === 0;
 })
 
-console.log(evenNumbers)
+console.log(evenNumbers);
+
+var employees = [
+    { name: "John", Salary: 50000 },
+    { name: "Susan", Salary: 60000 },
+    { name: "Greg", Salary: 100000 },
+    { name: "Mary", Salary: 120000 }
+]
+
+var dueForRaise = _.filter(employees, function(element) {
+    return element.Salary < 75000;
+})
+
+console.log(dueForRaise);
