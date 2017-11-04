@@ -32,3 +32,24 @@ var dueForRaise = _.filter(employees, function(element) {
 })
 
 console.log(dueForRaise);
+
+//Every
+
+var numbArray = [1, 3, 5, 7, 9];
+
+var isAllEven = _.every(numbArray, function(element) {
+    return element % 2 === 0;
+
+})
+
+console.log(isAllEven);
+
+//some
+
+var isSomeEven = _.some(numbArray, function(element) {
+    return element % 2 === 0;
+})
+
+console.log(isSomeEven);
+
+//reduce
